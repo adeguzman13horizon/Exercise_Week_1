@@ -1,0 +1,226 @@
+Arnolds-MBP:~ arnolddeguzman$ git clone https://github.com/Revature-Training-1302/exercises
+Cloning into 'exercises'...
+remote: Enumerating objects: 46, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 46 (delta 0), reused 12 (delta 0), pack-reused 34
+Unpacking objects: 100% (46/46), done.
+Arnolds-MBP:~ arnolddeguzman$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+Arnolds-MBP:~ arnolddeguzman$ ls
+Applications		Library			exercises
+Creative Cloud Files	Movies			iCloud Drive (Archive)
+Desktop			Music			one
+Documents		Pictures		pizza
+Downloads		Public			two
+Exercise_Week_1		cheese.txt
+IdeaProjects		eclipse-workspace
+Arnolds-MBP:~ arnolddeguzman$ cd exercises/
+Arnolds-MBP:exercises arnolddeguzman$ ls
+dummy_file	week1
+Arnolds-MBP:exercises arnolddeguzman$ cd week1/
+Arnolds-MBP:week1 arnolddeguzman$ ls
+8.2.md		git-exercise.md	unix_exercise
+Arnolds-MBP:week1 arnolddeguzman$ cd unix_exercise/
+Arnolds-MBP:unix_exercise arnolddeguzman$ ls
+chest			house			instructions.txt
+Arnolds-MBP:unix_exercise arnolddeguzman$ cd house/
+Arnolds-MBP:house arnolddeguzman$ ls
+basement	floor0		floor1		floor2
+Arnolds-MBP:house arnolddeguzman$ cd basement/
+Arnolds-MBP:basement arnolddeguzman$ ls
+laundry-room	storage
+Arnolds-MBP:basement arnolddeguzman$ cd laundry-room/
+Arnolds-MBP:laundry-room arnolddeguzman$ ls
+clothes		drying-rack	trash1		treasure1
+dryer		soap		trash2		washer
+Arnolds-MBP:laundry-room arnolddeguzman$ mv treasure1 ../../../chest
+Arnolds-MBP:laundry-room arnolddeguzman$ rm trash1
+Arnolds-MBP:laundry-room arnolddeguzman$ rm trash2 
+Arnolds-MBP:laundry-room arnolddeguzman$ ls
+clothes		dryer		drying-rack	soap		washer
+Arnolds-MBP:laundry-room arnolddeguzman$ cd ../
+Arnolds-MBP:basement arnolddeguzman$ ls
+laundry-room	storage
+Arnolds-MBP:basement arnolddeguzman$ cd storage/
+Arnolds-MBP:storage arnolddeguzman$ ls
+bicycle		trash3		treasure2
+Arnolds-MBP:storage arnolddeguzman$ mv treasure2 ../../../chest
+Arnolds-MBP:storage arnolddeguzman$ rm trash3 
+Arnolds-MBP:storage arnolddeguzman$ ls
+bicycle
+Arnolds-MBP:storage arnolddeguzman$ cd ../../
+Arnolds-MBP:house arnolddeguzman$ ls
+basement	floor0		floor1		floor2
+Arnolds-MBP:house arnolddeguzman$ cd floor0/
+Arnolds-MBP:floor0 arnolddeguzman$ ls
+bathroom	kitchen		living-room
+Arnolds-MBP:floor0 arnolddeguzman$ cd bathroom/
+Arnolds-MBP:bathroom arnolddeguzman$ ls
+cabinet	mat	mirror
+Arnolds-MBP:bathroom arnolddeguzman$ cd cabinet/
+Arnolds-MBP:cabinet arnolddeguzman$ ls
+3		comb		soap		toothpaste
+brush		shampoo		toothbrush	trasure
+Arnolds-MBP:cabinet arnolddeguzman$ mv trasure ../../../../chest
+Arnolds-MBP:cabinet arnolddeguzman$ ls
+3		comb		soap		toothpaste
+brush		shampoo		toothbrush
+Arnolds-MBP:cabinet arnolddeguzman$ cd ../../
+Arnolds-MBP:floor0 arnolddeguzman$ ls
+bathroom	kitchen		living-room
+Arnolds-MBP:floor0 arnolddeguzman$ cd kitchen/
+Arnolds-MBP:kitchen arnolddeguzman$ ls
+fridge	oven	pantry
+Arnolds-MBP:kitchen arnolddeguzman$ cd fridge/
+Arnolds-MBP:fridge arnolddeguzman$ ls
+bread		chicken		juice		soda		trash5
+carrots		eggs		milk		trash4		trasure4
+Arnolds-MBP:fridge arnolddeguzman$ mv trasure4 ../../../../chest
+Arnolds-MBP:fridge arnolddeguzman$ rm trash4
+Arnolds-MBP:fridge arnolddeguzman$ rm trash5 
+Arnolds-MBP:fridge arnolddeguzman$ ls
+bread	carrots	chicken	eggs	juice	milk	soda
+Arnolds-MBP:fridge arnolddeguzman$ cd ../
+Arnolds-MBP:kitchen arnolddeguzman$ ls
+fridge	oven	pantry
+Arnolds-MBP:kitchen arnolddeguzman$ cd oven/
+Arnolds-MBP:oven arnolddeguzman$ ls
+chicken-roast
+Arnolds-MBP:oven arnolddeguzman$ cd ../
+Arnolds-MBP:kitchen arnolddeguzman$ cd pantry/
+Arnolds-MBP:pantry arnolddeguzman$ ls
+cereal		chips		cookies		crackers	trash6
+Arnolds-MBP:pantry arnolddeguzman$ rm trash6 
+Arnolds-MBP:pantry arnolddeguzman$ ls
+cereal		chips		cookies		crackers
+Arnolds-MBP:pantry arnolddeguzman$ cd ../../
+Arnolds-MBP:floor0 arnolddeguzman$ ls
+bathroom	kitchen		living-room
+Arnolds-MBP:floor0 arnolddeguzman$ cd living-room/
+Arnolds-MBP:living-room arnolddeguzman$ ls
+TV		bookshelf	chair		couch		table
+Arnolds-MBP:living-room arnolddeguzman$ cd bookshelf/
+Arnolds-MBP:bookshelf arnolddeguzman$ ls
+animal-farm		it			trash7
+harry-potter		lord-of-the-rings	trasure5
+Arnolds-MBP:bookshelf arnolddeguzman$ mv trasure5 ../../../../chest
+Arnolds-MBP:bookshelf arnolddeguzman$ rm trash7 
+Arnolds-MBP:bookshelf arnolddeguzman$ ls
+animal-farm		it
+harry-potter		lord-of-the-rings
+Arnolds-MBP:bookshelf arnolddeguzman$ cd ../../../
+Arnolds-MBP:house arnolddeguzman$ ls
+basement	floor0		floor1		floor2
+Arnolds-MBP:house arnolddeguzman$ cd floor1/
+Arnolds-MBP:floor1 arnolddeguzman$ ls
+balcony		bathroom	bedroom1	bedroom2
+Arnolds-MBP:floor1 arnolddeguzman$ cd balcony/
+Arnolds-MBP:balcony arnolddeguzman$ ls
+chair	plant	trash10	trash11
+Arnolds-MBP:balcony arnolddeguzman$ rm trash10
+Arnolds-MBP:balcony arnolddeguzman$ rm trash11 
+Arnolds-MBP:balcony arnolddeguzman$ ls
+chair	plant
+Arnolds-MBP:balcony arnolddeguzman$ cd ../
+Arnolds-MBP:floor1 arnolddeguzman$ ls
+balcony		bathroom	bedroom1	bedroom2
+Arnolds-MBP:floor1 arnolddeguzman$ cd bathroom
+Arnolds-MBP:bathroom arnolddeguzman$ ls
+sink	toilet	tub
+Arnolds-MBP:bathroom arnolddeguzman$ cd ../
+Arnolds-MBP:floor1 arnolddeguzman$ ls
+balcony		bathroom	bedroom1	bedroom2
+Arnolds-MBP:floor1 arnolddeguzman$ cd bedroom1/
+Arnolds-MBP:bedroom1 arnolddeguzman$ ls
+TV		bed		closet		dresser		toy-chest
+Arnolds-MBP:bedroom1 arnolddeguzman$ cd closet/
+Arnolds-MBP:closet arnolddeguzman$ ls
+board-game	toy		trash8		trash9
+Arnolds-MBP:closet arnolddeguzman$ rm trash8
+Arnolds-MBP:closet arnolddeguzman$ rm trash9 
+Arnolds-MBP:closet arnolddeguzman$ ls
+board-game	toy
+Arnolds-MBP:closet arnolddeguzman$ cd ../
+Arnolds-MBP:bedroom1 arnolddeguzman$ ls
+TV		bed		closet		dresser		toy-chest
+Arnolds-MBP:bedroom1 arnolddeguzman$ cd dresser/
+Arnolds-MBP:dresser arnolddeguzman$ ls
+pants	shirt	socks
+Arnolds-MBP:dresser arnolddeguzman$ cd ../
+Arnolds-MBP:bedroom1 arnolddeguzman$ ls
+TV		bed		closet		dresser		toy-chest
+Arnolds-MBP:bedroom1 arnolddeguzman$ cd toy-chest/
+Arnolds-MBP:toy-chest arnolddeguzman$ ls
+car		dinosaur	trasure6
+cow		space-ship	truck
+Arnolds-MBP:toy-chest arnolddeguzman$ rm trasure6 
+Arnolds-MBP:toy-chest arnolddeguzman$ ls
+car		cow		dinosaur	space-ship	truck
+Arnolds-MBP:toy-chest arnolddeguzman$ cd ../../
+Arnolds-MBP:floor1 arnolddeguzman$ ls
+balcony		bathroom	bedroom1	bedroom2
+Arnolds-MBP:floor1 arnolddeguzman$ cd bedroom2/
+Arnolds-MBP:bedroom2 arnolddeguzman$ ls
+bed	closet	desk	mirror
+Arnolds-MBP:bedroom2 arnolddeguzman$ cd closet/
+Arnolds-MBP:closet arnolddeguzman$ ls
+suit		tie		treasure7
+Arnolds-MBP:closet arnolddeguzman$ mv treasure7 ../../../../chest
+Arnolds-MBP:closet arnolddeguzman$ ls
+suit	tie
+Arnolds-MBP:closet arnolddeguzman$ cd ../../../
+Arnolds-MBP:house arnolddeguzman$ ls
+basement	floor0		floor1		floor2
+Arnolds-MBP:house arnolddeguzman$ cd floor2/
+Arnolds-MBP:floor2 arnolddeguzman$ ls
+storage
+Arnolds-MBP:floor2 arnolddeguzman$ cd storage/
+Arnolds-MBP:storage arnolddeguzman$ ls
+box1	box2	box3
+Arnolds-MBP:storage arnolddeguzman$ cd box1/
+Arnolds-MBP:box1 arnolddeguzman$ ls
+trash12	trash13	trash14
+Arnolds-MBP:box1 arnolddeguzman$ rm trash12
+Arnolds-MBP:box1 arnolddeguzman$ rm trash13
+Arnolds-MBP:box1 arnolddeguzman$ rm trash14 
+Arnolds-MBP:box1 arnolddeguzman$ cd ../
+Arnolds-MBP:storage arnolddeguzman$ ls
+box1	box2	box3
+Arnolds-MBP:storage arnolddeguzman$ cd box2/
+Arnolds-MBP:box2 arnolddeguzman$ ls
+halloween-decoration	ice-skates		treasure8
+holiday-decoration	sweaters
+Arnolds-MBP:box2 arnolddeguzman$ mv treasure8 ../../../chest
+Arnolds-MBP:box2 arnolddeguzman$ ls
+halloween-decoration	ice-skates
+holiday-decoration	sweaters
+Arnolds-MBP:box2 arnolddeguzman$ cd ../
+Arnolds-MBP:storage arnolddeguzman$ ls
+box1	box2	box3
+Arnolds-MBP:storage arnolddeguzman$ cd box3/
+Arnolds-MBP:box3 arnolddeguzman$ ls
+posters		trash15		treasure9
+Arnolds-MBP:box3 arnolddeguzman$ mv treasure9 ../../../chest
+Arnolds-MBP:box3 arnolddeguzman$ rm trash15 
+Arnolds-MBP:box3 arnolddeguzman$ ls
+posters
+Arnolds-MBP:box3 arnolddeguzman$ cd ../../../
+Arnolds-MBP:house arnolddeguzman$ ls
+basement	chest		floor0		floor1		floor2
+Arnolds-MBP:house arnolddeguzman$ cd chest/
+-bash: cd: chest/: Not a directory
+Arnolds-MBP:house arnolddeguzman$ ls
+basement	chest		floor0		floor1		floor2
+Arnolds-MBP:house arnolddeguzman$ cd ../
+Arnolds-MBP:unix_exercise arnolddeguzman$ ls
+chest			house			instructions.txt
+Arnolds-MBP:unix_exercise arnolddeguzman$ cd chest/
+Arnolds-MBP:chest arnolddeguzman$ ls
+dummy		trasure4	treasure1	treasure7
+trasure		trasure5	treasure2
+Arnolds-MBP:chest arnolddeguzman$ find . -name trash*
+Arnolds-MBP:chest arnolddeguzman$ ls
+dummy		trasure4	treasure1	treasure7
+trasure		trasure5	treasure2
+Arnolds-MBP:chest arnolddeguzman$ 
