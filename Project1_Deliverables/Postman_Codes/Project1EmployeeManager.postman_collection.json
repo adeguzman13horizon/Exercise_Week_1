@@ -1,0 +1,489 @@
+{
+	"info": {
+		"_postman_id": "3a157d84-44c1-4dcd-b60d-c6a7f948fba9",
+		"name": "Project1EmployeeManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22995571"
+	},
+	"item": [
+		{
+			"name": "Managers",
+			"item": [
+				{
+					"name": "Post Method Login manager",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"dante\",\n    \"password\": \"jackson\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Project_1_Foundation/manager?enter=login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Project_1_Foundation",
+								"manager"
+							],
+							"query": [
+								{
+									"key": "enter",
+									"value": "login"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Method Register manager",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Dani\",\n    \"lastName\": \"Seller\",\n    \"email\": \"DaniSeller@yahoo.com\",\n    \"username\": \"dani\",\n    \"password\": \"seller\",\n    \"address\": \"California\",\n    \"phoneNumber\": \"4444\",\n    \"position\": \"manager\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Project_1_Foundation/manager?enter=register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Project_1_Foundation",
+								"manager"
+							],
+							"query": [
+								{
+									"key": "enter",
+									"value": "register"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Approve",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": \"1\",\n    \"status\": \"approved\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Project_1_Foundation/manager?change=approved",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Project_1_Foundation",
+								"manager"
+							],
+							"query": [
+								{
+									"key": "change",
+									"value": "approved"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deny",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": \"14\",\n    \"status\": \"denied\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Project_1_Foundation/manager?change=denied",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Project_1_Foundation",
+								"manager"
+							],
+							"query": [
+								{
+									"key": "change",
+									"value": "denied"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pending",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": \"3\",\n    \"status\": \"pending\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Project_1_Foundation/manager?change=pending",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Project_1_Foundation",
+								"manager"
+							],
+							"query": [
+								{
+									"key": "change",
+									"value": "pending"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tickets",
+			"item": [
+				{
+					"name": "Employee Submit Ticket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": \"400.0\",\n    \"salary\": \"22.0\",\n    \"dateSubmitted\": \"5 oclock\",\n    \"description\": \"It is now Fall\",\n    \"sender\": \"su\",\n    \"status\": \"pending\",\n    \"username\": \"yo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Project_1_Foundation/ticket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Project_1_Foundation",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Submitted Tickets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Project_1_Foundation/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Project_1_Foundation",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Submitted Pending Tickets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"pending\",\n    \"sender\": \"sender\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Project_1_Foundation/ticket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Project_1_Foundation",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Submitted Approved Tickets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"approved\",\n    \"sender\": \"sender\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Project_1_Foundation/ticket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Project_1_Foundation",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Submitted Denied",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"denied\",\n    \"sender\": \"sender\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Project_1_Foundation/ticket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Project_1_Foundation",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "Post Method Login employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"may\",\n    \"password\": \"jay\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Project_1_Foundation/employee?enter=login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Project_1_Foundation",
+								"employee"
+							],
+							"query": [
+								{
+									"key": "enter",
+									"value": "login"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Method Register employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Geo\",\n    \"lastName\": \"Essex\",\n    \"email\": \"LarrySmith@yahoo.com\",\n    \"username\": \"larry\",\n    \"password\": \"smith\",\n    \"address\": \"NewYork\",\n    \"phoneNumber\": \"333\",\n    \"position\": \"employee\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Project_1_Foundation/employee?enter=register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Project_1_Foundation",
+								"employee"
+							],
+							"query": [
+								{
+									"key": "enter",
+									"value": "register"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Submit Ticket",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Register employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Kareem\",\n    \"lastName\": \"Lotus\",\n    \"email\": \"larryluoi\",\n    \"username\": \"lokimanSix\",\n    \"password\": \"thaLokiTim\",\n    \"address\": \"thatManJam\",\n    \"phoneNumber\": \"12345\",\n    \"position\": \"employee\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Project_1_Foundation/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Project_1_Foundation",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login employee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/Project_1_Foundation/employee?username=Erwikk&password=dongjao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Project_1_Foundation",
+						"employee"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Erwikk"
+						},
+						{
+							"key": "password",
+							"value": "dongjao"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

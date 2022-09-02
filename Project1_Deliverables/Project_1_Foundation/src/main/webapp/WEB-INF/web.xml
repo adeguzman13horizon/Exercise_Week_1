@@ -1,0 +1,63 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+
+
+    <!-- in the servlet tag, we map the class to a name -->
+    <servlet>
+
+      <servlet-name>employee</servlet-name>
+      <servlet-class>com.revature.controller.EmployeeServlet</servlet-class>
+
+    </servlet>
+
+  <servlet-mapping>
+
+    <servlet-name>employee</servlet-name>
+    <!-- * means anything can come after it -->
+    <url-pattern>/employee</url-pattern>
+
+  </servlet-mapping>
+
+  <servlet>
+
+    <servlet-name>manager</servlet-name>
+    <servlet-class>com.revature.controller.ManagerServlet</servlet-class>
+
+  </servlet>
+
+  <servlet-mapping>
+
+    <servlet-name>manager</servlet-name>
+    <!-- * means anything can come after it -->
+    <url-pattern>/manager</url-pattern>
+
+  </servlet-mapping>
+
+  <servlet>
+
+    <servlet-name>ticket</servlet-name>
+    <servlet-class>com.revature.controller.RTicketsServlet</servlet-class>
+
+  </servlet>
+
+  <servlet-mapping>
+
+    <servlet-name>ticket</servlet-name>
+    <!-- * means anything can come after it -->
+    <url-pattern>/ticket</url-pattern>
+
+  </servlet-mapping>
+
+
+
+
+
+
+
+
+</web-app>
